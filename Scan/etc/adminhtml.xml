@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+			<menu>
+                <children>
+                    <scan module="scan">
+						<title>Scan</title>
+						<sort_order>100</sort_order>               
+						<children>
+							<items module="scan">
+								<title>Scan List</title>
+								<sort_order>2</sort_order>
+								<action>scan/adminhtml_scan</action>
+							</items>
+							<items1 module="scan">
+								<title>New Scan</title>
+								<sort_order>3</sort_order>
+								<action>scan/adminhtml_scancrm</action>
+							</items1>
+							<items2 module="scan">
+								<title>Hospitals</title>
+								<sort_order>0</sort_order>
+								<action>scan/adminhtml_scanhospital</action>
+							</items2>
+							<items4 module="scan">
+								<title>Confirmed scans</title>
+								<sort_order>5</sort_order>
+								<action>scan/adminhtml_scanconfirmed</action>
+							</items4>
+							<items5 module="scan">
+								<title>Completed scans</title>
+								<sort_order>6</sort_order>
+								<action>scan/adminhtml_scancompleted</action>
+							</items5>
+							<items6 module="scan">
+								<title>Price List</title>
+								<sort_order>1</sort_order>
+								<action>scan/adminhtml_scanprices</action>
+							</items6>
+							<items7 module="scan">
+								<title>Postponed scans</title>
+								<sort_order>4</sort_order>
+								<action>scan/adminhtml_scanpostponed</action>
+							</items7>
+						</children>
+					</scan>
+                </children>
+				</menu>
+            </admin>
+        </resources>
+    </acl>
+</config>
